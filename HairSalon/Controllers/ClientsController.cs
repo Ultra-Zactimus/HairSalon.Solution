@@ -12,7 +12,7 @@ namespace Salon.Controllers
   {
     private readonly HairSalonContext _db;
 
-    public ItemsController(HairSalonContext db)
+    public ClientsController(HairSalonContext db)
     {
       _db = db;
     }
@@ -25,7 +25,7 @@ namespace Salon.Controllers
 
     public ActionResult Create()
     {
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
       return View();
     }
 
@@ -39,14 +39,14 @@ namespace Salon.Controllers
 
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Client.FirstOrDefault(client => client.ClientId == id);
+      Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
       return View(thisClient);
     }
 
     public ActionResult Edit(int id)
     {
       var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
       return View(thisClient);
     }
 
