@@ -1,3 +1,15 @@
 @{
   Layout = "_Layout"; 
 }
+<header>
+  <p id="edit">@Html.ActionLink("Edit Sylist's Profile", "Edit", new { id = Model.StylistId })</p>
+  <p id="delete">@Html.ActionLink("Delete Stylists Profile", "Delete", new { id = Model.StylistId })</p>
+</header>
+
+@model Salon.Models.Stylist
+
+<main>
+  <h2>Stylist's Clients</h2>
+  <hr />
+  <h3>@Html.DisplayNameFor(model => model.Clients): @Html.DisplayFor(model => model.Clients)<h3>
+</main>

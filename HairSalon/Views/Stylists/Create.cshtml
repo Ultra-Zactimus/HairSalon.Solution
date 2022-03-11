@@ -1,3 +1,18 @@
 @{
   Layout = "_Layout"; 
 }
+<header>
+  <p id="stylist-list">@Html.ActionLink("Show all categories", "Index")</p>
+</header>
+
+@model Salon.Models.Stylist
+
+<main>
+  <h4>Add an employee</h4>
+  <label for="Add new stylist">Employee Name: </label>
+  @using (Html.BeginForm())
+  {
+    @Html.TextBoxFor(model => model.StylistName)
+    <input type="submit" value="Add New Stylist" required/>
+  }
+</main>
