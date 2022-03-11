@@ -1,7 +1,12 @@
 @{
   Layout = "_Layout"; 
 }
-
-<h1>Welcome Back Eau</h1>
-<p>Please Select from the Options in the Tab Below to navigate to your lists.</p>
-<p>At any time, Select from the Option in the Tab above to return here</p>
+<header id="header" class="head-foot">
+  <p id="stylist-list">@Html.ActionLink("View All Stylists", "Index", "Stylists")</p> 
+  <p id="client-list">@Html.ActionLink("View All Clients", "Index", "Clients")</p>
+</header>
+<main>
+  <h1>Welcome Back Eau Claire</h1>
+  <p>Please Select from the Options in the Tab Below to navigate to your lists.</p>
+  <p>At any time, Select from the Option in the Tab above to return here</p>
+</main>

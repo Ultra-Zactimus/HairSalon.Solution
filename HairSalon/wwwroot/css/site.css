@@ -1,4 +1,34 @@
-body, .head-foot
+body
 {
   text-align: center;
+}
+
+#header
+{
+  margin-bottom: 50px;
+  background-color: aquamarine;
+}
+
+#footer
+{
+  margin: 150px;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  height: 60px;
+  background-color: aquamarine;
+}
+
+#stylist-list
+{
+  display: inline-block;
+  width: 175px;
+  padding: 5px;
+}
+
+#client-list
+{
+  display: inline-block;
+  width: 175px;
+  padding: 5px;
 }
