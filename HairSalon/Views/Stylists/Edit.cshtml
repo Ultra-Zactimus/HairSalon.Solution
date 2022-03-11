@@ -1,3 +1,26 @@
 @{
   Layout = "_Layout"; 
 }
+
+<header>
+  <p id="stylist-info">@Html.ActionLink("Stylist's Clients", "Details", "Stylists")</p>
+  <p id="stylist-list">@Html.ActionLink("List of Stylists", "Index", "Stylists")</p>
+</header>
+
+@model Salon.Models.Stylist
+
+<main>
+  <h2>Edit this Stylist's Name:</h2>
+
+  <h4>@Html.DisplayFor(model => model.StylistName)</h4>
+
+  <label for="editor">Employee Name:</label>
+  @using (Html.BeginForm())
+  {
+    @Html.HiddenFor(model => model.StylistId)
+
+    @Html.EditorFor(model => model.StylistName)
+
+    <input type="submit" value="Save Changes" required/>
+  }
+</main>

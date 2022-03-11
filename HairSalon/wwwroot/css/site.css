@@ -29,9 +29,14 @@ footer
   padding: 5px;
 }
 
-#client-list, #delete
+#client-list, #delete, #stylist-info
 {
   display: inline-block;
   width: 175px;
   padding: 5px;
+}
+
+#warning
+{
+  color: red;
 }
