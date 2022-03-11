@@ -37,6 +37,7 @@ _Hair Salon owner Eau Claire needs a website that will allow them to keep track 
 
 * Run "$ `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`"
 * Run "$ `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`"
+* Run "$ `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`"
 * Run "$ `dotnet restore`" to restore the bin and obj folders.
 * Run "$ `dotnet build`" to build the project.
 * Run "$ `dotnet run`" or "$ `dotnet watch run`" to launch a LocalHost. Click on `LocalHost:5000`. You may have to hold Ctrl or Command when clicking it to get it to open in your internet broswer.
