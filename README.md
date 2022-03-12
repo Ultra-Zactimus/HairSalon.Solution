@@ -17,8 +17,8 @@
 _Hair Salon owner Eau Claire needs a website that will allow them to keep track of their Stylists and the Clients each Stylist is in charge of. They need to be able to add and remove new Stylists and add Clients to specific Stylists. This application is a simulation into adding and removing these feature._
 
 ## Setup/Installation Requirements
-#
-<em>Requirements for Running the Project in a Browser</em>
+
+<strong><em>Requirements for Running the Project in a Browser</em></strong>
 #
 
 Developer Note -- <em>You do not need to type in `$` into the terminal, the terminal starts with `$` on GitBash and `%` on Bash.</em>
@@ -46,13 +46,14 @@ Developer Note -- <em>You do not need the square brackets around your password, 
 * Run "$ `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`"
 * Run "$ `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`"
 * Run "$ `dotnet restore`" to restore the bin and obj folders.
-* Run "$ `dotnet build`" to build the project.
-* Run "$ `dotnet run`" or "$ `dotnet watch run`" to launch a LocalHost. Click on `LocalHost:5000`. You may have to hold Ctrl or Command when clicking it to get it to open in your internet broswer.
+* Next follow the steps below to create your database and password for the `appsettings.json` file.
 #
-<em>Installation for MySQL</em>
+<strong><em>Installation for MySQL</em></strong>
 #
 
-* Developer Note -- <em>I have included images of the entire process needed to get this porgram set up in the img folder of wwwroot. If at any point you are not sure about this, please refer to those images.</em>
+Developer Note -- <em>I have included images of the entire process needed to get this program set up in the `img` folder inside of `wwwroot` folder. If at any point you are not sure about where you should be clicking or adding things, please refer to those images.</em>
+
+<img src="./HairSalon/wwwroot/img/img02.png" width="100" alt="image of start page of MySQL Workbench>
 
 * Visit the website for MySQL Workbench and download it on your computer.
 * When you reach the Configuration part of the installation select "<em>Use Legacy Password Encryption</em>", make sure to also set your password here to something you will remember.
@@ -72,6 +73,8 @@ Developer Note -- <em>You do not need the square brackets around your password, 
 * Lastly you will want one more item for that StylistId this one will need to also be an INT and you will need PK and NN checked. Once these are all done click Apply at the bottom right and finish.
 * Next you will need to create another Table and name this one `stylists`. This table will just include the `StylistId` INT PK, NN, AI and `StylistName` VarChar(255). Once you are done click apply and finish.
 * You should now be ready to run the program as intended. If you would like to see each item being added to the database click on the Table tab in Workbench until you see `clients` and `stylists`. If you look to the right of it you should see 2 icons, the one to the farthest right will bring up the table with all the items inside of the table with their ID.
+* Run "$ `dotnet build`" to build the project.
+* Run "$ `dotnet watch run`" to launch a LocalHost. Click on `LocalHost:5000`. You may have to hold Ctrl or Command when clicking it to get it to open in your internet broswer.
 
 ## Known Bugs
 
