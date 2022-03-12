@@ -23,7 +23,7 @@ _Hair Salon owner Eau Claire needs a website that will allow them to keep track 
 
 Developer Note -- <em>You do not need to type in `$` into the terminal, the terminal starts with `$` on GitBash and `%` on Bash.</em>
 
-* Visit https://github.com/Ultra-Zactimus/
+* Visit https://github.com/Ultra-Zactimus/HairSalon.Solution
 * Clone this repository to your desktop.
 * Navigate to the top level directory in your terminal.
 * Run "$ `touch appsettings.json`"
@@ -53,7 +53,7 @@ Developer Note -- <em>You do not need the square brackets around your password, 
 
 Developer Note -- <em>I have included images of the entire process needed to get this program set up in the `img` folder inside of `wwwroot` folder. If at any point you are not sure about where you should be clicking or adding things, please refer to those images.</em>
 
-<img src="./HairSalon/wwwroot/img/img02.png" width="100" alt="image of start page of MySQL Workbench>
+[Click here for an Example Image of what's in the img folder.](https://github.com/Ultra-Zactimus/HairSalon.Solution/img/img02.png)
 
 * Visit the website for MySQL Workbench and download it on your computer.
 * When you reach the Configuration part of the installation select "<em>Use Legacy Password Encryption</em>", make sure to also set your password here to something you will remember.
