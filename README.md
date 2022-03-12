@@ -53,13 +53,12 @@ Developer Note -- <em>You do not need the square brackets around your password, 
 
 Developer Note -- <em>I have included images of the entire process needed to get this program set up in the `img` folder inside of `wwwroot` folder. If at any point you are not sure about where you should be clicking or adding things, please refer to those images.</em>
 
-[Click here for an Example Image of what's in the img folder.](https://github.com/Ultra-Zactimus/HairSalon.Solution/img/img02.png)
-
 * Visit the website for MySQL Workbench and download it on your computer.
 * When you reach the Configuration part of the installation select "<em>Use Legacy Password Encryption</em>", make sure to also set your password here to something you will remember.
 * In the terminal Run "$ `echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile`"
 * Run "$ `source ~/.bash_profile`" to ensure that the project is installed properly. If you see `mysql>` appear in the terminal then everything should be ready.
 * Next Run "$ `mysql -u root -p`", you should be prompted to enter a password.
+![Picture of My SQL Workbench Start up Page](/HairSalon/wwwroot/img/img01.png)
 * Once you are in, open up MySQL Workbench click the MySQL Connections on the left hand side, you will be prompted to enter your password.
 *You should now be within the main workspace of MySQL Workbench.
 * In the upper left should be a list of icons, hover your mouse over them till you find the one that says `"Create a new schema in the connected server"` Click that button.
