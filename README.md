@@ -48,29 +48,17 @@ _Hair Salon owner Eau Claire needs a website that will allow them to keep track 
 * Run "$ `dotnet restore`" to restore the bin and obj folders.
 * Run "$ `dotnet build`" to build the project.
 * Run "$ `dotnet run`" or "$ `dotnet watch run`" to launch a LocalHost. Click on `LocalHost:5000`. You may have to hold Ctrl or Command when clicking it to get it to open in your internet broswer.
-
-<em>MySQL Setup Instructions</em>
-
 * Visit the website for MySQL Workbench and download it on your computer.
 * When you reach the Configuration part of the installation select "<em>Use Legacy Password Encryption</em>", make sure to also set your password here to something you will remember.
 * In the terminal Run "$ `echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile`"
 * Run "$ `source ~/.bash_profile`" to ensure that the project is installed properly. If you see `mysql>` appear in the terminal then everything should be ready.
 * Next Run "$ `mysql -u root -p`", you should be prompted to enter a password.
-
-<img src="~/img/img01.png" width="300>
-
 * Once you are in, open up MySQL Workbench click the MySQL Connections on the left hand side, you will be prompted to enter your password.
 *You should now be within the main workspace of MySQL Workbench.
 * In the upper left should be a list of icons, hover your mouse over them till you find the one that says `"Create a new schema in the connected server"` Click that button.
 * The next page should look like this:
-
-<img src="~/img/img04.png" width="300">
-
 * Name your project and click apply and finish. This name will be used in the `appsettings.json` file in the section before the password.
 * Next step, on the main menu click on this new database in the window to the left till you see list item called `Table`. right click on it and you should see an option to `Create Table`.
-
-<img src="~/img/img07.png" width="300">
-
 * You will be taken to the screen for creating the table that will represent the Class in the code.
 * This is very important. Tables must match the class names plural in order for this program to work.
 
