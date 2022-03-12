@@ -2,3 +2,28 @@
   Layout = "_Layout"; 
 }
 
+<header>
+  <p id="client-info">@Html.ActionLink("Client Details", "Details", "Clients")</p>
+  <p id="client-list">@Html.ActionLink("List of Clients", "Index", "Clients")</p>
+</header>
+
+@model Salon.Models.Client
+
+<main>
+  <h2>Edit this Client's Name:</h2>
+
+  <h4>@Html.DisplayFor(model => model.ClientName)</h4>
+
+  <label for="editor">Client Name:</label>
+  @using (Html.BeginForm())
+  {
+    @Html.HiddenFor(model => model.ClientId)
+
+    @Html.EditorFor(model => model.ClientName)
+
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+
+    <input type="submit" value="Save" required/>
+  }
+</main>

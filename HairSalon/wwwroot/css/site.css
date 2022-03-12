@@ -22,7 +22,7 @@ footer
   background-color: rgb(231, 178, 178);
 }
 
-#stylist-list, #edit
+#stylist-list, #edit, #client-info
 {
   display: inline-block;
   width: 175px;
