@@ -34,8 +34,6 @@ _Hair Salon owner Eau Claire needs a website that will allow them to keep track 
     }
   }`
 
-<img src="~/img/img20.png" width="300">
-
 * Create a gitignore file. Run "$ `touch .gitignore`" on the top level of the project.
 * Inside of `VS Code` type in `appsettings.json` into the gitignore file. This will keep your password safe.
 * Change the password to be the same password as your mySQL Server Password. If you do not have mySQL server please visit their website: https://www.mysql.com/
@@ -48,6 +46,11 @@ _Hair Salon owner Eau Claire needs a website that will allow them to keep track 
 * Run "$ `dotnet restore`" to restore the bin and obj folders.
 * Run "$ `dotnet build`" to build the project.
 * Run "$ `dotnet run`" or "$ `dotnet watch run`" to launch a LocalHost. Click on `LocalHost:5000`. You may have to hold Ctrl or Command when clicking it to get it to open in your internet broswer.
+
+<em>Installation for MySQL</em>
+
+* Developer Note -- <em>I have included images of the entire process needed to get this porgram set up in the img folder of wwwroot. If at any point you are not sure about this, please refer to those images.</em>
+
 * Visit the website for MySQL Workbench and download it on your computer.
 * When you reach the Configuration part of the installation select "<em>Use Legacy Password Encryption</em>", make sure to also set your password here to something you will remember.
 * In the terminal Run "$ `echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile`"
